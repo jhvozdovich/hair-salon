@@ -6,8 +6,8 @@
 }
 
 <h2>Stylist Details</h2> 
-<h3>@Html.DisplayFor(model => model.Name)<h3>
-<h5>@Html.DisplayNameFor(model => model.Specialty): @Html.DisplayFor(model => model.Specialty)<h3></h5>
+<h3>@Html.DisplayFor(model => model.Name)</h3>
+<h5>@Html.DisplayNameFor(model => model.Specialty): @Html.DisplayFor(model => model.Specialty)</h5>
 
 <h4>Clients</h4>
 @if (Model.Clients.Count == 0)
@@ -21,10 +21,10 @@ else
     <p>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId})</p>
   }
   <hr>
-<p>@Html.ActionLink("Add Client", "Create", "Clients")</p>
 <p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Remove Stylist", "Delete", new { id = Model.StylistId})</p>
 }
+<p>@Html.ActionLink("Add Client", "Create", "Clients")</p>
 
 <hr>
 <p>@Html.ActionLink("Back to Stylists", "Index")</p>
