@@ -14,14 +14,18 @@
 {
   <p>@Html.DisplayFor(model => model.Name) has no clients listed.</p>
 }
-@foreach (Client client in Model.Clients)
+else
 {
-  <p>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId})</p>
-}
-
-<hr>
+  @foreach (Client client in Model.Clients)
+  {
+    <p>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId})</p>
+  }
+  <hr>
+<p>@Html.ActionLink("Add Client", "Create", "Clients")</p>
 <p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Remove Stylist", "Delete", new { id = Model.StylistId})</p>
+}
+
 <hr>
 <p>@Html.ActionLink("Back to Stylists", "Index")</p>
 <p>@Html.ActionLink("Home", "Index", "Home")</p>
