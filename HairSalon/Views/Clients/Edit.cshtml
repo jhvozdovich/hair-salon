@@ -22,5 +22,8 @@
   @Html.LabelFor(model => model.Usual)
   @Html.EditorFor(model => model.Usual)
   <br>
-  <input type="submit" value="Save" />
+  <div class="flex">
+    <input type="submit" value="Save"/>
+    <button>@Html.ActionLink("Back", "Details", new { id = Model.ClientId })</button>
+  </div>
 }

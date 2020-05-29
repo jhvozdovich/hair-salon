@@ -18,5 +18,8 @@
   @Html.LabelFor(model => model.Specialty)
   @Html.EditorFor(model => model.Specialty)
   <br>
-  <input type="submit" value="Save" />
+  <div class="flex">
+    <input type="submit" value="Save"/>
+    <button>@Html.ActionLink("Back", "Details", new { id = Model.StylistId })</button>
+  </div>
 }

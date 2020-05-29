@@ -86,3 +86,11 @@ button{
   margin-left: 3%;
   margin-right: 3%;
 }
+
+@media (min-width: 1000px) {
+  .box {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 15%;
+  }
+}
