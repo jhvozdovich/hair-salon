@@ -61,22 +61,26 @@ dotnet run
 3. Paste the following in the query section to create the database:
 
 ```
-CREATE DATABASE `hair_salon`;
-USE `hair_salon`;
+CREATE DATABASE `jessica_hvozdovich`;
 
-CREATE TABLE `Stylists` (
+USE `jessica_hvozdovich`;
+
+CREATE TABLE `clients` (
+  `ClientId` int(11) NOT NULL AUTO_INCREMENT,
+  `StylistId` int(11) NOT NULL DEFAULT '0',
+  `Name` varchar(255) DEFAULT NULL,
+  `RegularClient` tinyint(4) DEFAULT '0',
+  `Usual` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ClientId`)
+);
+
+CREATE TABLE `stylists` (
   `StylistId` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
+  `Specialty` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`StylistId`)
 );
 
-CREATE TABLE `Clients` (
-  `StylistId` int(11) DEFAULT NULL,
-  `Name` varchar(255) DEFAULT NULL,
-  `Address` varchar(255) DEFAULT NULL,
-  `ClientId` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`ClientId`)
-) ;
 ```
 
 4. Press the lightning bolt button to run this command.
@@ -111,8 +115,8 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 | **User can click on Stylists to view their details and Clients** | User Input:"Click: Sally" | Output: “Sally Specialty-Cuts and Color, Clients: Dr. Finkelstein, Mayor” |
 | **If no Clients have been added a message appears** | User Input:"Click: View Clients" | Output: “You have no Clients listed.” |
 | **User can navigate to a create new Clients page for each Stylist** | User Input:"Click: Sally Click: Add Client" | Output: “Client Form" |
-| **User can add a new Client for each Stylist** | User Input:"Name: Vampire #3, Address: 925 Mausoleum Ave, Regular: True, Usual: Trim" | Output: “Sally Clients: Dr. Finkelstein, Mayor, Vampire #3” |
-| **User can view Client details when clicked** | User Input:"Click: Dr. Finkelstein" | Output: “Client Details: Name: Dr. Finkelstein, Address: 111 Laboratory on the Hill Way, Regular: True, Usual: Shave” |
+| **User can add a new Client for each Stylist** | User Input:"Name: Vampire #3, Regular: True, Usual: Trim" | Output: “Sally Clients: Dr. Finkelstein, Mayor, Vampire #3” |
+| **User can view Client details when clicked** | User Input:"Click: Dr. Finkelstein" | Output: “Client Details: Name: Dr. Finkelstein,  Regular: True, Usual: Shave” |
 | **User can delete all Stylists** | User Input:"Click: Delete All" | Output: “You have no Stylists listed!” |
 | **User can delete single Stylists** | User Input:"Click: Delete Stylist" | Output: “You have removed this Stylist!” |
 | **User can delete all Clients** | User Input:"Click: Delete All" | Output: “This Stylists has no current Clients." |
