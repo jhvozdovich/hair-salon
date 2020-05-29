@@ -28,7 +28,7 @@ code .
 ```
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Port=3306;database=hair_salon;uid=root;pwd=YOURMYSQLPASSWORDHERE;"
+    "DefaultConnection": "Server=localhost;Port=3306;database=jessica_hvozdovich;uid=root;pwd=YOURMYSQLPASSWORDHERE;"
   }
 }
 ```
