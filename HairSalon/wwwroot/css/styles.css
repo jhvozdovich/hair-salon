@@ -4,8 +4,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin: 20%;
 }
+
+
 
 .box {
   background: rgba(247, 246, 243, 0.9);
@@ -13,4 +14,21 @@ body {
   border: 10px solid rgb(30, 40, 45);
   padding: 20px;
   text-align: center;
+  margin: 20%;
+}
+
+.nav {
+  top: 0px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  overflow: auto;
+  display: inline;
+}
+
+li {
+  float: left;
 }

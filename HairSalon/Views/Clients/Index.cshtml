@@ -16,5 +16,3 @@
 { 
   <p>@Html.ActionLink($"{client.Name}", "Details", new { id = client.ClientId}) | Stylist: @Html.ActionLink($"{client.Stylist.Name}", "Details", "Stylists", new { id = client.StylistId} )</p>   
 }
-
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
