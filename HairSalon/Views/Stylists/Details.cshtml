@@ -20,8 +20,8 @@ else
   {
     <p>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId})</p>
   }
-  <hr>
-<p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Remove Stylist", "Delete", new { id = Model.StylistId})</p>
 }
-<p>@Html.ActionLink("Add Client", "Create", "Clients")</p>
+
+<button>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</button>
+<button>@Html.ActionLink("Remove Stylist", "Delete", new { id = Model.StylistId})</button>
+<button>@Html.ActionLink("Add Client", "Create", "Clients")</button>

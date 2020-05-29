@@ -7,12 +7,10 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-
 .box {
   background: rgba(247, 246, 243, 0.85);
   border-radius: 3px;
-  border: 10px solid rgb(30, 40, 45);
+  border: 8px solid rgb(30, 40, 45);
   padding: 20px;
   text-align: center;
   margin: 20%;
@@ -31,7 +29,6 @@ body {
   display: inline;
   font-family: 'Courier New', Courier, monospace;
 }
-
 
 a {
   color: rgb(169, 43, 43);
@@ -53,5 +50,22 @@ li {
   float: left;
   text-align: center;
   font-size: large;
-  width: 25%;
+  width: 30%;
+}
+
+.blockquote-footer {
+  color: rgb(169, 43, 43);
+}
+
+button, input[type="submit"] {
+  padding: 5px;
+  border: 1px solid rgb(35, 27, 27);
+}
+
+button:hover, input[type="submit"]:hover {
+  background: rgba(169, 43, 43);
+}
+
+button:hover a, input[type="submit"]:hover a {
+  color: black;
 }
