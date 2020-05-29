@@ -119,14 +119,17 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 | **User can navigate to a create new Clients page for each Stylist** | User Input:"Click: Sally Click: Add Client" | Output: “Client Form" |
 | **User can add a new Client for each Stylist** | User Input:"Name: Vampire #3, Regular: True, Usual: Trim" | Output: “Sally Clients: Dr. Finkelstein, Mayor, Vampire #3” |
 | **User can view Client details when clicked** | User Input:"Click: Dr. Finkelstein" | Output: “Client Details: Name: Dr. Finkelstein,  Regular: True, Usual: Shave” |
-| **User can delete all Stylists** | User Input:"Click: Delete All" | Output: “You have no Stylists listed!” |
-| **User can delete single Stylists** | User Input:"Click: Delete Stylist" | Output: “You have removed this Stylist!” |
-| **User can delete all Clients** | User Input:"Click: Delete All" | Output: “This Stylists has no current Clients." |
-| **User can delete single Clients** | User Input:"Click: Delete Client" | Output: “You have removed this Client!” |
+| **User can delete a Stylist** | User Input:"Click: Delete Stylist" | Output: “You have removed this Stylist!” |
+| **User can delete a Client** | User Input:"Click: Delete Client" | Output: “You have removed this Client!” |
 
-### Resouces
-Sketches by Tim Burton
-[Background Image](https://media.npr.org/assets/news/2009/11/21/picshow_wide-76e82ca373253abd2a7ecb456b96189faac796f3.jpg?s=1400)
+### Stretch Goals
+* Form to search for a stylist by name.
+* Form to search for a client by name.
+* Appointment features.
+* Payment tracking.
+
+### Resources
+Edward Scissorhands Sketch by Tim Burton [Background Image](https://media.npr.org/assets/news/2009/11/21/picshow_wide-76e82ca373253abd2a7ecb456b96189faac796f3.jpg?s=1400)
 
 #### License
 
