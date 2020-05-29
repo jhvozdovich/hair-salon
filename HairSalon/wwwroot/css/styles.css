@@ -30,6 +30,10 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+p, a {
+  font-size: medium;
+}
+
 a {
   color: rgb(169, 43, 43);
 }

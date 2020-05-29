@@ -5,6 +5,8 @@
 #### Author: **_Jessica Hvozdovich_**
 #### May 29, 2020
 
+![Site Screenshot](./HairSalon/wwwroot/img/readmescreenshot.jpg)
+
 ### Description
 
 _The purpose of this project is to create a C# web application and employ database basics with MySQL and Entity. It also demonstrates the use of MVC routes that follow RESTful convention. This application takes user input to display different Stylists and the Clients that belong to in a one to many relationship._
