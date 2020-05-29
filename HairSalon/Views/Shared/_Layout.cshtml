@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
+    <ul class="nav">
+      <li>@Html.ActionLink("Home", "Index", "Home")</li>
+      <li>@Html.ActionLink("All Stylists", "Index", "Stylists")</li>
+      <li>@Html.ActionLink("All Clients", "Index", "Clients")</li>
+    </ul>
     <div class="box">
       @RenderBody()
     </div>
