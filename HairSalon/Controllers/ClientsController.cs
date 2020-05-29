@@ -22,12 +22,21 @@ namespace HairSalon.Controllers
       return View(model);
     }
 
+    // [HttpGet, ActionName("Create")]
+    // public ActionResult Create(int id)
+    // {
+    //   ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
+    //   return View();
+    // }
+
     [HttpGet, ActionName("Create")]
     public ActionResult Create(int id)
     {
-      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
-      return View();
+      Client thisClient;
+      thisClient.StylistId = id;
+      return View(thisClient);
     }
+
 
     [HttpPost, ActionName("Create")]
     public ActionResult Create(Client client)

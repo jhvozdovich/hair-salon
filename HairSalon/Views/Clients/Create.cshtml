@@ -7,8 +7,10 @@
 <h4>Add a new Client</h4>
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
+  @* @Html.LabelFor(model => model.Stylist)
+  @Html.DropDownList("StylistId") *@
+  @Html.HiddenFor(model => model.StylistId)
+  <p>Stylist: @Html.DisplayFor(model => model.Name)</p>
   <br>
   @Html.LabelFor(model => model.Name)
   @Html.TextBoxFor(model => model.Name)
@@ -21,3 +23,4 @@
   <br>
   <input type="submit" value="Add Client"/>
 }
+  
