@@ -122,6 +122,8 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 | **User can delete all Clients** | User Input:"Click: Delete All" | Output: “This Stylists has no current Clients." |
 | **User can delete single Clients** | User Input:"Click: Delete Client" | Output: “You have removed this Client!” |
 
+### Resouces
+[Background Image](https://unsplash.com/photos/VjRpkGtS55w)
 
 #### License
 

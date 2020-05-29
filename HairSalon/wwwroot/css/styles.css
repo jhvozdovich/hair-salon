@@ -1,0 +1,16 @@
+body {
+  background: url(../img/salonbackground.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 20%;
+}
+
+.box {
+  background: rgba(247, 246, 243, 0.9);
+  border-radius: 5px;
+  border: 10px solid rgb(30, 40, 45);
+  padding: 20px;
+  text-align: center;
+}
